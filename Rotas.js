@@ -2,7 +2,7 @@ import React from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { Login } from "./src/Componentes/Login"
-import { Cadastrar } from "./src/Componentes/Cadastrar"
+import { Cadastrar } from "./src/Componentes/CadastrarLogin"
 import { Home } from "./src/Componentes/Home"
 
 export function Rotas() {
