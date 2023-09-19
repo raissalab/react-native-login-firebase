@@ -1,8 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
-import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
+import { initializeAuth } from 'firebase/auth';
 
 //Aqui vocês devem colocar as suas credenciais
 const firebaseConfig = {
@@ -16,8 +14,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = initializeAuth(app, {
-  persistence: getReactNativePersistence(ReactNativeAsyncStorage)
-})
+const auth = initializeAuth(app)
 
 export { app, auth }
